@@ -3,7 +3,7 @@ body {
   background-color: rgba(0, 0, 0, 0.815);
 }
 
-/************HEADER***********/
+/************************HEADER**************************/
 
 header .nav-link {
   transition: all 0.3s ease-out;
@@ -21,17 +21,14 @@ header .dropdown-item:hover {
   background-color: hsla(0, 0%, 0%, 0.31);
 }
 
-/*************HOME***********************/
-
-#home {
-  position: relative;
-}
+/**************************HOME*******************************/
 
 .background_home {
   background-image: url("../img/encabezado.jpg");
   height: 100vh;
   background-size: cover;
   filter: brightness(50%);
+  position: relative;
 }
 .home_text {
   position: absolute;
@@ -39,10 +36,10 @@ header .dropdown-item:hover {
   color: white;
   font-size: 1rem;
 }
-#home h1 {
+.home_text h1 {
   font-weight: 800;
 }
-/*******NOVEDADES*************/
+/***************************NOVEDADES***************************/
 
 #novedades .card {
   background-color: rgba(0, 0, 0, 0.667);
@@ -63,7 +60,7 @@ header .dropdown-item:hover {
   padding: 0;
 }
 
-/**************FOOTER****************/
+/**************************FOOTER**************************/
 #footer .footer_logo {
   width: 70px;
   opacity: 50%;
@@ -76,7 +73,7 @@ header .dropdown-item:hover {
   width: 50px;
 }
 
-/**************Media Queries**********/
+/***********************Media Queries***********************/
 
 @media (min-width: 576px) {
 }

@@ -2,7 +2,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-/************HEADER***********/
+/************************HEADER*****************************/
 
 header .nav-link {
   transition: all 0.3s ease-out;
@@ -20,18 +20,15 @@ header .dropdown-item:hover {
   background-color: hsla(0, 0%, 0%, 0.31);
 }
 
-/*********general***********/
+/************************general*************************/
 
 .menu .background-MP {
   background-color: rgba(23, 23, 23, 0.634);
   width: 80%;
   height: 70vh;
 }
-hr {
-  height: 500px;
-}
 
-/************menu Principal********/
+/*********************menu Principal**********************/
 
 #menuPrincipal {
   background-image: url(../img/fondo.jpg);
@@ -39,14 +36,15 @@ hr {
   background-position: center;
   height: 100vh;
 }
-/********postres********/
+
+/***************************postres**********************/
 #postres {
   background-image: url(../img/fondopostre.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
-/********desayuno********/
+/**********************desayuno*************************/
 
 #desayunos {
   background-image: url(../img/fondodesayuno1.jpg);
@@ -55,7 +53,7 @@ hr {
   height: 100vh;
 }
 
-/**************FOOTER****************/
+/************************FOOTER************************/
 #footer .footer_logo {
   width: 70px;
   opacity: 50%;
