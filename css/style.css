@@ -1,6 +1,11 @@
 body {
   font-family: "Raleway", sans-serif;
   background-color: rgba(0, 0, 0, 0.815);
+  scroll-behavior: smooth;
+  
+}
+.scroll_section{
+  scroll-margin-top: 60px;
 }
 
 /************************HEADER**************************/
@@ -60,6 +65,70 @@ header .dropdown-item:hover {
   padding: 0;
 }
 
+/***********************HISTORIA*********************/
+#historia .contenedor {
+  background-image: url(../img/fondoHistoria.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  
+opacity: 80%;
+}
+#historia .imagen {
+  width: 400px;
+}
+/************************NOSOTROS***********************/
+
+#nosotros .card{
+  width: 12rem;
+  background-color: rgba(217, 7, 7, 0.651);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: black;
+ 
+}
+#nosotros .imagen-nosotros{
+  width:auto;
+  margin: 10px;
+  border-radius: 100%;
+  
+  
+}
+/*************************CONOCENOS***********************/
+.mapa iframe{
+  width: 100%;
+ 
+  aspect-ratio: 1.2;
+  
+
+}
+#visitanos .visitanos{
+  background-image: url(../img/fondoContactanos.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  opacity: 80%;
+  padding: 40px;
+  margin-bottom: 0;
+}
+
+
+
+
+#visitanos input,  #visitanos textarea {
+  background-color: rgb(0, 0, 0);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: white;
+  max-height: 200px;
+  
+}
+#Visitanos button{
+  background-color: rgba(255, 0, 0, 0.61);
+}
+
 /**************************FOOTER**************************/
 #footer .footer_logo {
   width: 70px;
@@ -76,17 +145,27 @@ header .dropdown-item:hover {
 /***********************Media Queries***********************/
 
 @media (min-width: 576px) {
+  #historia .contenedor{
+    height: 60vh;
+  }
+  
+  
 }
 
 @media (min-width: 768px) {
+  #historia .contenedor{
+    height: 70vh;
+  }
+ 
 }
+
 
 @media (min-width: 992px) {
   /*header*/
 
   header .nav-link:hover {
     background-color: transparent;
-    color: hsla(348, 95%, 50%, 0.75) !important;
+    color:  hsla(348, 95%, 50%, 0.75) !important;
   }
   header .navbar-brand img {
     width: 40px;
@@ -96,6 +175,13 @@ header .dropdown-item:hover {
   .home_text {
     top: 190px;
   }
+  #historia .contenedor{
+      height: 80vh;
+    }
+
+    #visitanos .visitanos{
+      height: 100vh;
+    }
 }
 
 @media (min-width: 1200px) {
