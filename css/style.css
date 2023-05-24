@@ -1,10 +1,10 @@
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Merriweather", serif;
+
   background-color: rgba(0, 0, 0, 0.815);
   scroll-behavior: smooth;
-  
 }
-.scroll_section{
+.scroll_section {
   scroll-margin-top: 60px;
 }
 
@@ -15,11 +15,18 @@ header .nav-link {
 }
 header .nav-link:hover {
   background-color: hsla(348, 95%, 50%, 0.75);
+
   color: white;
 }
 
 header .navbar-brand img {
   width: 30px;
+  
+}
+
+.navbar-brand{
+  opacity: 70%;
+
 }
 
 header .dropdown-item:hover {
@@ -29,20 +36,17 @@ header .dropdown-item:hover {
 /**************************HOME*******************************/
 
 .background_home {
-  background-image: url("../img/encabezado.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.39)),
+    url("../img/encabezado.jpg");
   height: 100vh;
   background-size: cover;
-  filter: brightness(50%);
-  position: relative;
 }
-.home_text {
-  position: absolute;
-  top: 250px;
+.text_home {
   color: white;
-  font-size: 1rem;
 }
-.home_text h1 {
-  font-weight: 800;
+
+h1 {
+  font-weight: 900;
 }
 /***************************NOVEDADES***************************/
 
@@ -67,65 +71,64 @@ header .dropdown-item:hover {
 
 /***********************HISTORIA*********************/
 #historia .contenedor {
-  background-image: url(../img/fondoHistoria.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.307), rgba(0, 0, 0, 0.208)),
+    url(../img/fondoHistoria.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
-  
-opacity: 80%;
+  height: 80vh;
+
+  opacity: 80%;
 }
 #historia .imagen {
   width: 400px;
 }
 /************************NOSOTROS***********************/
 
-#nosotros .card{
+#nosotros .card {
   width: 12rem;
   background-color: rgba(217, 7, 7, 0.651);
   border-radius: 10px;
   margin-bottom: 10px;
   margin-top: 30px;
   color: black;
- 
 }
-#nosotros .imagen-nosotros{
-  width:auto;
+#nosotros .imagen-nosotros {
+  width: 10rem;
+  height: 10rem;
+
   margin: 10px;
   border-radius: 100%;
-  
-  
 }
 /*************************CONOCENOS***********************/
-.mapa iframe{
+.mapa iframe {
   width: 100%;
- 
-  aspect-ratio: 1.2;
-  
 
+  aspect-ratio: 1.2;
 }
-#visitanos .visitanos{
+#visitanos .visitanos {
   background-image: url(../img/fondoContactanos.jpg);
   background-size: cover;
   background-position: top;
+
   height: 100%;
   opacity: 80%;
   padding: 40px;
   margin-bottom: 0;
 }
 
-
-
-
-#visitanos input,  #visitanos textarea {
+#visitanos input,
+#visitanos textarea {
   background-color: rgb(0, 0, 0);
   border-top: 0;
   border-left: 0;
   border-right: 0;
   color: white;
   max-height: 200px;
-  
 }
-#Visitanos button{
+#visitanos textarea {
+  border-bottom: 0;
+}
+#Visitanos button {
   background-color: rgba(255, 0, 0, 0.61);
 }
 
@@ -145,53 +148,40 @@ opacity: 80%;
 /***********************Media Queries***********************/
 
 @media (min-width: 576px) {
-  #historia .contenedor{
+  #historia .contenedor {
     height: 60vh;
   }
-  
-  
 }
 
 @media (min-width: 768px) {
-  #historia .contenedor{
+  #historia .contenedor {
     height: 70vh;
   }
- 
 }
-
 
 @media (min-width: 992px) {
   /*header*/
 
   header .nav-link:hover {
     background-color: transparent;
-    color:  hsla(348, 95%, 50%, 0.75) !important;
+    color: hsla(348, 95%, 50%, 0.75) !important;
   }
   header .navbar-brand img {
     width: 40px;
   }
   /*home*/
 
-  .home_text {
-    top: 190px;
+  #historia .contenedor {
+    height: 80vh;
   }
-  #historia .contenedor{
-      height: 80vh;
-    }
 
-    #visitanos .visitanos{
-      height: 100vh;
-    }
+  #visitanos .visitanos {
+    height: 100vh;
+  }
 }
 
 @media (min-width: 1200px) {
   /*home*/
-  .home_text {
-    top: 210px;
-  }
-  .background_home {
-    filter: none;
-  }
 }
 
 @media (min-width: 1400px) {

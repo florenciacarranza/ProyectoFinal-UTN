@@ -1,5 +1,5 @@
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Merriweather", serif;
   scroll-behavior: smooth;
 }
 
@@ -15,10 +15,19 @@ header .nav-link:hover {
 
 header .navbar-brand img {
   width: 30px;
+  
+}
+.navbar-brand{
+  opacity: 70%;
+
 }
 
 header .dropdown-item:hover {
   background-color: hsla(0, 0%, 0%, 0.31);
+}
+
+.comida {
+  font-size: 13px;
 }
 
 /************************general*************************/
