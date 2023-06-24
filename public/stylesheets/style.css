@@ -1,0 +1,326 @@
+body {
+  font-family: "Merriweather", serif;
+  background-color: rgba(0, 0, 0, 0.815);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  
+}
+
+.scroll_section {
+  scroll-margin-top: 80px;
+}
+
+/*******HEADER************/
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-dark .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28348, 95, 50, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-toggler {
+  color: hsla(348, 95%, 50%, 0.5);
+  border-color: transparent;
+}
+
+header .nav-link {
+  transition: all 0.3s ease-out;
+}
+header .nav-link:hover {
+  background-color: hsla(348, 95%, 50%, 0.75);
+
+  color: white;
+}
+
+header .navbar-brand img {
+  width: 30px;
+  
+}
+
+.navbar-brand{
+  opacity: 70%;
+
+}
+
+header .dropdown-item:hover {
+  background-color: hsla(0, 0%, 0%, 0.31);
+}
+
+/**************************HOME*******************************/
+
+.background_home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.39)),
+    url("../images/encabezado.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+}
+
+.text_home {
+  color: white;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+/***************************NOVEDADES***************************/
+
+#novedades .card {
+  background-color: rgba(0, 0, 0, 0.667);
+  height: 18rem;
+  width: 18rem;
+  transition: all 0.3s ease-out;
+}
+
+#novedades .card:hover {
+  color: hsla(348, 95%, 50%, 0.75);
+  transform: scale(1.1);
+}
+
+#novedades .img_Card {
+  height: 200px;
+}
+
+#novedades .icon_novedades {
+  width: 25px;
+  padding: 0;
+}
+
+/***********************HISTORIA*********************/
+#historia .contenedor {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.307), rgba(0, 0, 0, 0.208)),
+    url(../images/fondoHistoria.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 80vh;
+
+  opacity: 80%;
+}
+
+#historia .imagen {
+  width: 400px;
+}
+
+/************************NOSOTROS*********************/
+
+ 
+
+#nosotros .card {
+  width: 11rem;
+  background-color: transparent;
+  
+  
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color:whitesmoke;
+  text-align: center;
+  border: 0;
+  
+}
+
+#nosotros .imagen-nosotros {
+  width: 7rem;
+  height: 7rem;
+
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.text-profesion{
+  color: rgba(250, 235, 215, 0.778);
+}
+  
+
+
+/*************************CONOCENOS***********************/
+.mapa iframe {
+  width: 100%;
+
+  aspect-ratio: 1.2;
+}
+
+#visitanos .visitanos {
+  background-image: url(../images/fondoContactanos.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+
+  height: 100%;
+  opacity: 80%;
+  padding: 40px;
+  margin-bottom: 0;
+}
+
+#visitanos input,
+#visitanos textarea {
+  background-color: rgb(0, 0, 0);
+ border:0;
+  color: white;
+  max-height: 200px;
+}
+
+
+
+
+#Visitanos button {
+  background-color: rgba(255, 0, 0, 0.61);
+}
+
+/**************************FOOTER**************************/
+footer {
+  background-color: rgba(22, 21, 21, 0.878);
+  margin-bottom: 0.1px;
+}
+.contenedor-footer{
+  height: 25vh;
+  display: flex;
+  width: 100%;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ .logo img {
+  width: 4em;
+  opacity: 50%;
+}
+.secciones{
+  margin-right:10px;
+}
+ .secciones-list {
+
+  
+  display: flex;
+  
+  flex-direction:column ;
+  opacity: 50%;
+  padding-left: 0;
+
+}
+.social-media{
+  display: flex;
+  flex-direction: column;
+  
+
+  
+  margin-left:10px ;
+
+}
+.social-media a i {
+  
+  font-size: 2em;
+  color:whitesmoke ;
+  opacity: 40%;
+
+  
+  
+}
+.social-media a i:hover {
+  color:rgba(255, 0, 0, 0.61);
+
+}
+footer a{
+  text-decoration: none;
+  color:aliceblue;
+}
+
+/************************ pagina Novedades general*************************/
+
+.menu .background-MP {
+  background-color: rgba(23, 23, 23, 0.634);
+  width: 80%;
+  height: 70vh;
+}
+
+/*********************menu Principal**********************/
+
+#menuPrincipal {
+  background-image: url(../images/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/***************************postres**********************/
+#postres {
+  background-image: url(../images/fondopostre.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+/**********************desayuno*************************/
+
+#desayunos {
+  background-image: url(../images/fondodesayuno1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* #footer .footer_logo {
+  width: 70px;
+  opacity: 50%;
+}
+
+#footer li .secciones {
+  list-style: none;
+}
+
+#footer .icono {
+  width: 50px;
+} */
+
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/*************************SM*********************/
+@media (min-width: 576px) {
+  #historia .contenedor {
+    height: 60vh;
+  }
+}
+
+/*
+/*************************MD*********************/
+@media (min-width: 768px) {
+  #historia .contenedor {
+    height: 70vh;
+  }
+}
+
+/*
+/*************************LG*********************/
+@media (min-width: 992px) {
+  /*header*/
+  header .nav-link:hover {
+    background-color: transparent;
+    color: hsla(348, 95%, 50%, 0.75) !important;
+  }
+  header .navbar-brand img {
+    width: 40px;
+  }
+
+  /*home*/
+
+  #historia .contenedor {
+    height: 80vh;
+  }
+
+  #visitanos .visitanos {
+    height: 100vh;
+  }
+}
+
+
