@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Delicius' });
 });
 
 router.post  ('/',async(req, res, next) =>{
