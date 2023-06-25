@@ -228,12 +228,19 @@ footer a{
   color:aliceblue;
 }
 
-/************************ pagina Novedades general*************************/
+/*****************************************************
+                  pagina Novedades general
+***********************************************************/
 
 .menu .background-MP {
   background-color: rgba(23, 23, 23, 0.634);
   width: 80%;
-  height: 70vh;
+  height: 80vh;
+}
+.comida{
+  
+  font-size: 10px;
+  
 }
 
 /*********************menu Principal**********************/
@@ -261,18 +268,7 @@ footer a{
   height: 100vh;
 }
 
-/* #footer .footer_logo {
-  width: 70px;
-  opacity: 50%;
-}
 
-#footer li .secciones {
-  list-style: none;
-}
-
-#footer .icono {
-  width: 50px;
-} */
 
 /*
 /*
@@ -321,6 +317,12 @@ footer a{
   #visitanos .visitanos {
     height: 100vh;
   }
+  .comida{
+  
+    font-size: 13px;
+    
+  }
 }
+
 
 
