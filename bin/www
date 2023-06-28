@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('sitio-restaurant:server');
+var debug = require('debug')('sitio-copia-rex:server');
 var http = require('http');
 
 /**
