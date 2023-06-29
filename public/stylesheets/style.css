@@ -106,9 +106,7 @@ h1 {
   color: hsla(348, 95%, 50%, 0.75);
   transform: scale(1.05);
 }
-#novedades .card:hover img {
-  filter: grayscale(1);
-}
+
 
 #novedades .img_Card {
   height: 200px;
@@ -188,7 +186,7 @@ h1 {
 
 #visitanos input,
 #visitanos textarea {
-  background-color: rgb(0, 0, 0);
+  background-color: hsl(0, 0%, 0%);
  border:0;
   color: white;
   max-height: 200px;
@@ -291,7 +289,7 @@ footer a{
 
 /***************************postres**********************/
 #postres {
-  background-image: url(../images/fondopostre.jpg);
+  background-image: url(../images/fondopostre.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
