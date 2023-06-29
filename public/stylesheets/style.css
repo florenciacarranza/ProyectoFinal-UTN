@@ -265,7 +265,7 @@ footer a{
 
 /*****************************************************
                   pagina Novedades general
-***********************************************************/
+*******************************************************/
 
 .menu .background-MP {
   background-color: rgba(23, 23, 23, 0.634);
@@ -278,7 +278,7 @@ footer a{
   
 }
 
-/*********************menu Principal**********************/
+/********menu Principal**************/
 
 #menuPrincipal {
   background-image: url(../images/fondo.webp);
@@ -287,20 +287,35 @@ footer a{
   height: 100vh;
 }
 
-/***************************postres**********************/
+/***********postres***************/
 #postres {
   background-image: url(../images/fondopostre.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
-/**********************desayuno*************************/
+/*********desayuno***************/
 
 #desayunos {
   background-image: url(../images/fondodesayuno.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+/************************************************
+                    ERROR
+*************************************************/
+
+
+.error div{
+
+  margin-top: 8rem;
+  
+}
+.img_error{
+  display: block;
+  width: 25rem;
 }
 
 
