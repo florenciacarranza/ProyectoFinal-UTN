@@ -52,7 +52,7 @@ header .dropdown-item:hover {
 
 .background_home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/encabezado.jpg");
+    url("../images/encabezado.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
@@ -122,7 +122,7 @@ h1 {
 /***********************HISTORIA*********************/
 #historia .contenedor {
   background-image: linear-gradient(rgba(0, 0, 0, 0.307), rgba(0, 0, 0, 0.208)),
-    url(../images/fondoHistoria.jpg);
+    url(../images/fondoHistoria.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -175,7 +175,7 @@ h1 {
 }
 
 #visitanos .visitanos {
-  background-image: url(../images/fondoContactanos.jpg);
+  background-image: url(../images/fondoContactanos.webp);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -283,7 +283,7 @@ footer a{
 /*********************menu Principal**********************/
 
 #menuPrincipal {
-  background-image: url(../images/fondo.jpg);
+  background-image: url(../images/fondo.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -299,7 +299,7 @@ footer a{
 /**********************desayuno*************************/
 
 #desayunos {
-  background-image: url(../images/fondodesayuno1.jpg);
+  background-image: url(../images/fondodesayuno.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
