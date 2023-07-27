@@ -48,7 +48,7 @@ header .dropdown-item:hover {
 
 .background_home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/encabezado.webp");
+    url("../images/mobilencabezado.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
@@ -108,7 +108,7 @@ h1 {
 /***********************HISTORIA*********************/
 #historia .contenedor {
   background-image: linear-gradient(rgba(0, 0, 0, 0.307), rgba(0, 0, 0, 0.208)),
-    url(../images/fondoHistoria.webp);
+    url("../images/mobilfondoHistoria.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -154,7 +154,7 @@ h1 {
 }
 
 #visitanos .visitanos {
-  background-image: url(../images/fondoContactanos.webp);
+  background-image: url("../images/mobilefondoContactanos.webp");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -294,6 +294,7 @@ footer a {
   #historia .contenedor {
     height: 60vh;
   }
+  
 }
 
 /*
@@ -301,6 +302,17 @@ footer a {
 @media (min-width: 768px) {
   #historia .contenedor {
     height: 70vh;
+  }
+  .background_home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/encabezado.webp");
+  }
+  #historia .contenedor {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.307), rgba(0, 0, 0, 0.208)),
+      url("../images/fondoHistoria.webp");
+  }
+  #visitanos .visitanos {
+    background-image: url("../images/fondoContactanos.webp");
   }
 }
 

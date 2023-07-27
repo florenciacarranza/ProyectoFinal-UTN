@@ -1,0 +1,23 @@
+<div class=" d-flex flex-column justify-content-center align-items-center" style="height: 80vh;">
+
+<form action="/admin/login" method="post" class=" container d-flex flex-column justify-content-center align-items-center " >
+    <div class="mb-3 col-lg-4">
+        <label for="usuario" class="form-label text-white">Usuario</label>
+        <input type="text" name="usuario" placeholder="Usuario.." class="form-control" id="usuario"
+            aria-describedby="emailHelp" />
+
+    </div>
+    <div class="mb-3 col-lg-4">
+        <label for="password" class="form-label text-white">Contraseña</label>
+        <input type="password" name="password" placeholder="Contraseña.." class="form-control"
+            id="password" />
+    </div>
+    {{#if error}}
+<p class="text-danger">Usuario o contraseña incorrecto.</p>
+{{/if}}
+    <div class="col-lg-4">
+        <button type="submit" class="btn btn-danger">Enviar</button>
+    </div>
+</form>
+
+</div>

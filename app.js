@@ -4,10 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 require ('dotenv').config();
+var session = require('express-session');
 
 var novedadesRouter = require('./routes/novedades');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var loginRouter = require('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades');
 
 
 
@@ -22,9 +25,37 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+  secret: 'asdfghjklñpoiuytre',
+  resave: false,
+  saveUninitialized:true 
+}));
+
+secured = async(req, res, next)=>{
+  try{
+    console.log(req.session.id_usuario)
+    if(req.session.id_usuario){
+      next();
+    }else{
+      res.redirect('/admin/login')
+    }
+  } catch(error){
+    console.log(error)
+  };
+
+};
+
+
+
 app.use('/novedades', novedadesRouter)
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/admin/login', loginRouter);
+app.use('/admin/novedades',secured, adminRouter);
+
+
+
 
 app.get('/novedades', function(req, res, next) {
   res.render('novedades', { title: 'Novedades' });
