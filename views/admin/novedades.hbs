@@ -1,11 +1,35 @@
-<div class="container" style="margin-top:2rem; height:100vh;">
-    <div class="row">
+<main class="container" style="margin-top:2rem; height:80vh;">
+    <section class="row mb-4">
         <div class="col">
             <p class="d-flex justify-content-end align-items-center">
                 <span class="text-white me-3">Hola {{persona}}! </span>
-                <a href="/admin/login/logout" class="btn btn-danger">cerrar sesion <i class="bi bi-box-arrow-right"></i></a>
+                <a href="/admin/login/logout" class="btn btn-danger">cerrar sesion <i
+                        class="bi bi-box-arrow-right"></i></a>
             </p>
         </div>
-    </div>
+    </section>
+    <section class="row ">
+        <div class="col d-flex flex-column align-items-center justify-content-center">
+            <article class="card  bg-secondary mb-4 mt-4" style="width: 330px">
+                <div class="card-body">
+                    <h5 class="card-title text-white ">Novedades- Menu Principal</h5>
+                    <a href="/admin/novedadesPrincipal" class="btn btn-primary">Entrar</a>
+                </div>
+            </article>
+            <article class="card bg-secondary mb-4" style="width: 330px;">
+                <div class="card-body">
+                    <h5 class="card-title text-white ">Novedades- Postres</h5>
+                    <a href="/admin/novedadesPostres" class="btn btn-primary">Entrar</a>
+                </div>
+            </article>
+            <article class="card  bg-secondary" style="width: 330px">
+                <div class="card-body">
+                    <h5 class="card-title text-white ">Novedades- Desayuno</h5>
+                    <a href="/admin/novedadesDesayuno" class="btn btn-primary">Entrar</a>
+                </div>
+            </article>
+        </div>
+    </section>
 
-</div>
+
+</main>

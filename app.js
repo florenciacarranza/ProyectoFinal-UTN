@@ -11,6 +11,10 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
+var adminPrincipal = require('./routes/admin/novedadesPrincipal');
+var adminPostres = require('./routes/admin/novedadesPostres');
+var adminDesayuno = require('./routes/admin/novedadesDesayuno');
+
 
 
 
@@ -46,14 +50,14 @@ secured = async(req, res, next)=>{
 
 };
 
-
-
 app.use('/novedades', novedadesRouter)
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades',secured, adminRouter);
-
+app.use('/admin/novedadesPrincipal',secured, adminPrincipal);
+app.use('/admin/novedadesPostres',secured, adminPostres);
+app.use('/admin/novedadesDesayuno',secured, adminDesayuno);
 
 
 

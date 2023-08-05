@@ -1,0 +1,26 @@
+<div class="container " style="height:70vh;">
+    <div class="row mt-4 d-flex flex-column justify-content-center align-items-center">
+        <div class="col-lg-5">
+            <h4 class="text-white text-center my-4">Modificar Novedad</h4>
+            <form action="/admin/novedadesPostres/modificar" method="post">
+                <input type="hidden" value="{{novedad.id}}" name="id">
+                <div class="form-group">
+                    <label class="text-white">Titulo</label>
+                    <input type="text" name="titulo" class="form-control" value="{{novedad.titulo}}">
+                </div>
+                <div class="form-group mt-3">
+                    <label class="text-white">Descripcion</label>
+                    <textarea name="descripcion" cols="30" rows="5"
+                        class="form-control">{{novedad.descripcion}}</textarea>
+                </div>
+                {{#if error}}
+                <p class="text-danger mt-3"><i class="bi bi-exclamation-triangle-fill"></i> {{message}}</p>
+                {{/if}}
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary me-1">Modificar</button>
+                     <a href="/admin/novedadesPostres" class="btn btn-danger">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

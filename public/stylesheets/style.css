@@ -235,10 +235,20 @@ footer a {
 .menu .background-MP {
   background-color: rgba(23, 23, 23, 0.634);
   width: 80%;
-  height: 80vh;
+  height: 520px;
+  
 }
-.comida {
-  font-size: 10px;
+
+.carousel-item{
+  height: 380px;
+  
+  
+  
+}
+p.descripcion{
+  font-size: .8rem;
+  padding-left: 10px;
+
 }
 
 /********menu Principal**************/
@@ -337,7 +347,6 @@ footer a {
   #visitanos .visitanos {
     height: 100vh;
   }
-  .comida {
-    font-size: 13px;
-  }
+  
+  
 }

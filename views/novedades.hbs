@@ -4,30 +4,34 @@
         <div data-aos="zoom-in" class="background-MP mx-auto">
             <h2 class="text-center fs-1 m-4">Menu Principal</h2>
             <hr />
-            <div class="texto_comida col-lg-5 d-inline text-lg-center">
-                <div class=" comida mb-lg-5">
-                    <h4>Food name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolorum.</p>
-                    <p>$</p>
-
-                </div>
-                <div class=" comida mb-lg-5">
-                    <h4>Food name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolorum.</p>
-                    <p>$</p>
-
-                </div>
-                <div class=" comida mb-lg-5">
-                    <h4>Food name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolorum.</p>
-                    <p>$</p>
-
-                </div>
-            </div>
-
-
-
-
+            <section class="col-lg-5 d-inline text-lg-center">
+                <article id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner carrusel1">
+                        {{#each principalNovedades}}
+                        <div class="carousel-item row " data-bs-interval="2000"
+                            style="background-color: rgb(25, 25, 25);">
+                            <div class="h-100">
+                                <div
+                                    class=" pt-5 mt-3 mt-md-0 offset-1 col-md-5 h-100 d-flex flex-column justify-content-md-center align-items-center ">
+                                    <h4>{{titulo}}</h4>
+                                    <p class="descripcion" style="hyphens: auto;">{{descripcion}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                    </artic>
+            </section>
         </div>
     </section>
     <!--postres-->
@@ -35,57 +39,95 @@
         <div data-aos="zoom-in" class="background-MP mx-auto">
             <h2 class="text-center fs-1 m-4">Postres</h2>
             <hr />
-            <div class="texto_comida col-lg-5 d-inline text-lg-center">
-                <div class=" comida mb-lg-5">
-                    <h4>Food name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolorum.</p>
-                    <p>$</p>
+            <section class=" col-lg-5 d-inline text-lg-center">
+                <article id="carrusel2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner carrusel2">
+                        {{#each postresNovedades}}
+                        <div class="carousel-item  row" style="background-color: rgb(25, 25, 25); "
+                            data-bs-interval="2000">
+                            <div class="h-100">
+                                <div
+                                    class=" pt-5 mt-3 mt-md-0 offset-1 col-md-5 h-100 d-flex flex-column justify-content-md-center align-items-center">
 
-                </div>
-                <div class=" comida mb-lg-5">
-                    <h4>Food name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolorum.</p>
-                    <p>$</p>
-
-                </div>
-                <div class=" comida mb-lg-5">
-                    <h4>Food name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolorum.</p>
-                    <p>$</p>
-
-                </div>
-            </div>
+                                    <h4>{{titulo}}</h4>
+                                    <p class="descripcion" style="hyphens: auto;">{{descripcion}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrusel2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </article>
+            </section>
         </div>
     </section>
+
     <!--desayunos-->
     <section class="menu row my-5 gy-5 text-white mt-0 mb-0 pt-5" id="desayunos">
         <div data-aos="zoom-in" class="background-MP mx-auto">
             <h2 class="text-center fs-1 m-4">Desayunos</h2>
             <hr />
             <div class="texto_comida col-lg-5 d-inline text-lg-center">
-                <div class=" comida mb-lg-5">
-                    <h4>Food name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolorum.</p>
-                    <p>$</p>
+                <div id="carrusel3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner carrusel3">
 
-                </div>
-                <div class=" comida mb-lg-5">
-                    <h4>Food name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolorum.</p>
-                    <p>$</p>
+                        {{#each desayunoNovedades}}
+                        <div class="carousel-item row " style="background-color: rgb(25, 25, 25);"
+                            data-bs-interval="2000">
+                            <div class="h-100">
+                                <div
+                                    class=" pt-5 mt-3 mt-md-0 offset-1 col-md-5 h-100 d-flex flex-column justify-content-md-center align-items-center">
+                                    <h4>{{titulo}}</h4>
+                                    <p class="descripcion" style="hyphens: auto;">{{descripcion}}</p>
+                                </div>
+                            </div>
+                        </div>
 
-                </div>
-                <div class=" comida mb-lg-5">
-                    <h4>Food name</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolorum.</p>
-                    <p>$</p>
-
+                        {{/each}}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrusel3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
             </div>
-
-
-
         </div>
         </div>
     </section>
 </main>
+
+<script>
+    const carrusel1 = document.querySelector('.carrusel1');
+    const carrusel2 = document.querySelector('.carrusel2');
+    const carrusel3 = document.querySelector('.carrusel3');
+
+    const c1 = carrusel1.firstElementChild;
+    const c2 = carrusel2.firstElementChild;
+    const c3 = carrusel3.firstElementChild;
+
+
+    window.onload = function () {
+        c1.classList.add('active');
+        c2.classList.add('active');
+        c3.classList.add('active');
+
+    }
+
+
+
+</script>
