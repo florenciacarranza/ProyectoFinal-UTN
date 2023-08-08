@@ -241,11 +241,11 @@ footer a {
 .menu .background-MP {
   background-color: rgba(23, 23, 23, 0.634);
   width: 80%;
-  height: 520px;
+  height: 600px;
 }
 
 .carousel-item {
-  height: 380px;
+  height: 460px;
 
 }
 
@@ -279,6 +279,8 @@ p.descripcion {
   background-position: center;
   height: 800px;
 }
+
+
 
 /************************************************
                     ERROR
@@ -330,6 +332,19 @@ p.descripcion {
 
   #visitanos .visitanos {
     background-image: url("../images/fondoContactanos.webp");
+  }
+
+  .imagen-carousel {
+    width: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagen-carousel img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 

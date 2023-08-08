@@ -1,8 +1,8 @@
-<div class="container " style="height:500x;">
+<div class="container " style="height:600px;">
     <div class="row mt-4 d-flex flex-column justify-content-center align-items-center">
         <div class="col-lg-5">
             <h4 class="text-white text-center my-4">Modificar Novedad</h4>
-            <form action="/admin/novedadesDesayuno/modificar" method="post">
+            <form action="/admin/novedadesDesayuno/modificar" method="post" enctype="multipart/form-data">
                 <input type="hidden" value="{{novedad.id}}" name="id">
                 <div class="form-group">
                     <label class="text-white">Titulo</label>
@@ -13,12 +13,23 @@
                     <textarea name="descripcion" cols="30" rows="5"
                         class="form-control">{{novedad.descripcion}}</textarea>
                 </div>
+                <div class="form-group text-white mt-4">
+                    <p>
+                        <label for="imagen">Imagen:</label>
+                        <input type="file" name="imagen" id="imagen">
+                    </p>
+                    <p>
+                        <input type="checkbox" name="img_delete" id="img_delete" value="1">
+                        <label for="img_delete" class="text-primary">Eliminar imagen actual?</label>
+                        <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+                    </p>
+                </div>
                 {{#if error}}
                 <p class="text-danger mt-3"><i class="bi bi-exclamation-triangle-fill"></i> {{message}}</p>
                 {{/if}}
                 <div class="mt-4">
                     <button type="submit" class="btn btn-primary me-1">Modificar</button>
-                     <a href="/admin/novedadesDesayuno" class="btn btn-danger">Cancelar</a>
+                    <a href="/admin/novedadesDesayuno" class="btn btn-danger">Cancelar</a>
                 </div>
             </form>
         </div>

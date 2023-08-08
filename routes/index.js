@@ -26,9 +26,6 @@ router.post('/', async (req, res, next) => {
       user: process.env.SHTP_USER,
       pass: process.env.SHTP_PASS
     }
-
-
-
   });
 
   const info = await transporter.sendMail(obj);
