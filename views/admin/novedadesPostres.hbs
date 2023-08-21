@@ -24,6 +24,11 @@
             <a href="/admin/novedadesPostres/agregar" class="btn btn-success"><i class="bi bi-plus"></i>Nuevo</a>
         </div>
     </section>
+    <section class="row text-right">
+            <form action="/admin/novedadesPostres" method="get" class="form-inline d-flex col-md-4 col-10">
+            <input type="search" class="form-control" placeholder="Buscar.." aria-label="search" name="q">
+            <button class="btn btn-secondary my-0 " type="submit"><i class="bi bi-search"></i></button></form>
+        </section> 
     <section class="row">
         <div class="col table-responsive" style="max-height:600px; overflow-y:scroll;">
             <table class="table table-hover table-secondary">
@@ -52,6 +57,11 @@
                     {{/each}}
                 </tbody>
             </table>
+            {{#if is_search}}
+            {{#unless novedadesPostres.length}}
+            <p class="text-danger mt-4 pt-5 text-center">No se encontraron resultados para <b>{{q}}</b></p>
+            {{/unless}}
+            {{/if}}
         </div>
     </section>
 </main>

@@ -7,7 +7,14 @@ const uploader = util.promisify(cloudinary.uploader.upload);
 const destroy = util.promisify(cloudinary.uploader.destroy);
 
 router.get('/', async (req, res, next) => {
-    var novedadesDesayuno = await desayunoModel.getDesayuno();
+   // var novedadesDesayuno = await desayunoModel.getDesayuno();
+   var novedadesDesayuno
+    if(req.query.q === undefined){
+        novedadesDesayuno = await desayunoModel.getDesayuno();
+    }else{
+        novedadesDesayuno = await desayunoModel.buscarNovedad(req.query.q);
+    }
+
     novedadesDesayuno = novedadesDesayuno.map(novedad => {
         if (novedad.img_id) {
             const imagen = cloudinary.image(novedad.img_id, {
@@ -30,7 +37,9 @@ router.get('/', async (req, res, next) => {
     res.render('admin/novedadesDesayuno', {
         layout: 'admin/layout',
         persona: req.session.nombre,
-        novedadesDesayuno
+        novedadesDesayuno,
+        is_search: req.query.q !== undefined,
+        q: req.query.q
     });
 });
 
